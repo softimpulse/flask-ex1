@@ -1,4 +1,4 @@
-from flask import Flask, request, url_for
+from flask import Flask, request, url_for, render_template
 app = Flask(__name__)
 
 
@@ -14,7 +14,7 @@ def hello_world():
 
 @app.route('/hello/<name>')
 def hello_world_name(name):
-    return 'Hello %s' % name
+    return render_template('hello.html', name=name)
 
 
 @app.route('/user/<username>')
