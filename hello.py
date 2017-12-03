@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 app = Flask(__name__)
 
 
@@ -37,3 +37,11 @@ def projects():
 @app.route('/about')
 def about():
     return 'The about page'
+
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        return 'POST'
+    else:
+        return 'GET'
