@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, url_for
 app = Flask(__name__)
 
 
@@ -36,7 +36,7 @@ def projects():
 
 @app.route('/about')
 def about():
-    return 'The about page'
+    return 'The about page <img src="%s">' % url_for('static', filename='test.jpg')
 
 
 @app.route('/login', methods=['GET', 'POST'])
