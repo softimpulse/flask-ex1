@@ -10,12 +10,12 @@ toolbar = DebugToolbarExtension(app)
 
 @app.route('/')
 def index():
-    return 'Main page'
+    return render_template('start.html')
 
 
 @app.route('/hello/')
 def hello_world():
-    return 'Hello world'
+    return render_template('hello.html')
 
 
 @app.route('/hello/<name>')
