@@ -11,14 +11,14 @@ and visit http://127.0.0.1:5000/
 
 you can add `--host=0.0.0.0` to make server accessibe from other computers. 
 
-"""
+```
 from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
     return 'Hello, World!'
-"""
+```
 
 ## For debugging use also flask-debugtoolbar
 
