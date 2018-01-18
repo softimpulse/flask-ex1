@@ -1,5 +1,13 @@
 # flask-ex1
 
+Before doing anything set up a virtual environment:
+```
+cd A_NICE_NEW_FOLDER
+python3 -m venv .
+. bin/activate # activates new env, adds also envname to prompt ...
+pip install flask
+```
+
 Simple Flask example, starts with 
 
 ```
