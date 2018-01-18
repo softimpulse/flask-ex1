@@ -1,11 +1,11 @@
 from flask import Flask, request, url_for, render_template
-from flask_debugtoolbar import DebugToolbarExtension
+# from flask_debugtoolbar import DebugToolbarExtension
 
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = ';lae4c'
 
-toolbar = DebugToolbarExtension(app)
+# toolbar = DebugToolbarExtension(app)
 
 
 @app.route('/')
